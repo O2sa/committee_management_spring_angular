@@ -1,0 +1,13 @@
+<ng-container>
+ 
+  <th class="text-start">
+    الإجراءت
+  </th>
+  @for (col of columns; track $index) {
+    <th class="min-w-[180px] text-start" >
+      {{col.header}}
+    </th>
+  
+    }
+
+</ng-container>

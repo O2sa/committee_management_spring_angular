@@ -1,0 +1,24 @@
+<ng-container>
+
+
+  <td>
+    <div class="flex ">
+      <button (click)="editItem()"
+        class="flex-none rounded-md bg-primary ml-2 px-4 py-2.5 text-xs font-semibold text-primary-foreground">
+        تعديل
+      </button>
+      <button (click)="deleteItem()"
+        class="flex-none rounded-md bg-red-600 px-4 py-2.5 text-xs font-semibold text-primary-foreground">
+        حذف
+      </button>
+    </div>
+  </td>
+  @for (col of columns; track $index) {
+  <td class="text-start">
+    {{getCellValue(col)}}
+  </td>
+
+  }
+
+
+</ng-container>

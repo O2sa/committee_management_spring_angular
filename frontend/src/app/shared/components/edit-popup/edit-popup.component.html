@@ -1,0 +1,55 @@
+<p-dialog [header]="header" [(visible)]="display" [modal]="true" [closable]="false">
+
+
+  <!--body-->
+  <div class="relative p-6 flex-auto">
+    <form [formGroup]="itemForm">
+
+
+      @for (col of columns; track $index) {
+
+
+
+      <ng-container [ngSwitch]="col.type">
+        <p-floatlabel variant="on"  class="w-full mb-4">
+
+          <input *ngSwitchCase="'text'" type="text" pInputText formControlName="{{col.accessor}}" [id]="col.accessor" />
+          <p-datepicker *ngSwitchCase="'date'" dateFormat="yy-mm-dd" formControlName="{{col.accessor}}"
+            [id]="col.accessor" showIcon iconDisplay="input" />
+          <p-inputnumber [useGrouping]="false" *ngSwitchCase="'number'" formControlName="{{col.accessor}}" [id]="col.accessor"
+            class="w-full" />
+          <p-select *ngSwitchCase="'model'" [options]="modelsData[col.api??'']||[]"
+            formControlName="{{col.accessor+'Id'}}" [id]="col.accessor" optionLabel="{{col.displayField}}"
+            optionValue="id" class="w-full " />
+          <input *ngSwitchDefault type="text" pInputText [formControlName]="col.accessor" [id]="col.accessor" />
+
+
+          <label [for]="col.accessor">{{ col.header }}</label>
+
+        </p-floatlabel>
+
+      </ng-container>
+
+
+
+
+      }
+    </form>
+
+
+
+  </div>
+
+  <!--footer-->
+  <div class="flex items-center justify-end p-6 border-t border-solid border-muted/20 rounded-b">
+    <app-button class="primary" type="button" (buttonClick)="onCancel()">
+      Close
+    </app-button>
+    <button
+      class="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+      type="button" (click)="onConfirm()">
+      Save Changes
+    </button>
+  </div>
+
+</p-dialog>
