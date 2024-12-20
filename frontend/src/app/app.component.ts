@@ -21,7 +21,7 @@ import { AuthInterceptor } from './auth.interceptor';
   ],
 })
 export class AppComponent {
-  title = 'Angular Tailwind';
+  title = 'commite-management';
 
   constructor(public themeService: ThemeService) {}
 }
