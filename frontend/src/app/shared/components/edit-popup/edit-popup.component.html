@@ -42,14 +42,10 @@
 
   <!--footer-->
   <div class="flex items-center justify-end p-6 border-t border-solid border-muted/20 rounded-b">
-    <app-button class="primary" type="button" (buttonClick)="onCancel()">
-      Close
-    </app-button>
-    <button
-      class="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-      type="button" (click)="onConfirm()">
-      Save Changes
-    </button>
+
+    <app-button class="ml-2"  impact="none" (click)="onCancel()"  tone="primary" shape="rounded" size="medium">إلغاء</app-button>
+    <app-button  impact="bold" (click)="onConfirm()"  tone="primary" shape="rounded" size="medium">حفظ</app-button>
+
   </div>
 
 </p-dialog>

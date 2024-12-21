@@ -30,8 +30,8 @@ export class SignUpComponent implements OnInit {
 
   ngOnInit(): void {
     this.form = this._formBuilder.group({
-      username: ['', [Validators.required, ]],
-      fullName: ['', [Validators.required, ]],
+      username: ['', [Validators.required]],
+      fullName: ['', [Validators.required]],
       password: ['', Validators.required],
     });
   }
@@ -54,17 +54,10 @@ export class SignUpComponent implements OnInit {
     // }
     this.authService.register(this.form.value).subscribe({
       next: (data) => {
-        console.log(data);
+        // console.log(data);
         // this.totalRecords = products.total;
         // this.authService.storeToken(data.token);
-        this._router.navigate(['/auth/sign-in']);
-
-      },
-      error: (error) => {
-        // this.handleRequestError(error);
-        console.log('Error caught by the method');
-        console.log('Error status:', error.status);
-        console.log('Error response:', error);
+        this._router.navigate(['/auth']);
       },
     });
   }

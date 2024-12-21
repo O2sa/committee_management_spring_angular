@@ -50,15 +50,16 @@ export class Menu {
       separator: true,
       items: [
         {
-          icon: 'assets/icons/heroicons/outline/download.svg',
-          label: 'الأعضاء',
-          route: '/dashboard/members',
-        },
-        {
-          icon: 'assets/icons/heroicons/outline/download.svg',
+          icon: 'assets/icons/heroicons/outline/lock-closed.svg',
           label: 'الثوابت',
           route: '/dashboard/constants',
         },
+        {
+          icon: 'assets/icons/heroicons/outline/user-circle.svg',
+          label: 'الأعضاء',
+          route: '/dashboard/members',
+        },
+
         {
           icon: 'assets/icons/heroicons/outline/gift.svg',
           label: 'اللجان',
@@ -75,7 +76,7 @@ export class Menu {
           route: '/dashboard/committeMembers',
         },
         {
-          icon: 'assets/icons/heroicons/outline/users.svg',
+          icon: 'assets/icons/heroicons/outline/folder.svg',
           label: 'الوظائف',
           route: '/dashboard/jobs',
         },

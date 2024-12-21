@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.CommitteeManagement.CommitteeManagementApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-21T17:52:38" hostname="manjaro" time="0.682">
+<testsuite name="com.example.CommitteeManagement.CommitteeManagementApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-21T18:51:48" hostname="manjaro" time="1.054">
   <properties/>
-  <testcase name="contextLoads()" classname="com.example.CommitteeManagement.CommitteeManagementApplicationTests" time="0.682"/>
-  <system-out><![CDATA[20:52:18.921 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.CommitteeManagement.CommitteeManagementApplicationTests]: CommitteeManagementApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-20:52:19.218 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.CommitteeManagement.CommitteeManagementApplication for test class com.example.CommitteeManagement.CommitteeManagementApplicationTests
+  <testcase name="contextLoads()" classname="com.example.CommitteeManagement.CommitteeManagementApplicationTests" time="1.054"/>
+  <system-out><![CDATA[21:51:17.671 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.CommitteeManagement.CommitteeManagementApplicationTests]: CommitteeManagementApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:51:17.879 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.CommitteeManagement.CommitteeManagementApplication for test class com.example.CommitteeManagement.CommitteeManagementApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -14,18 +14,18 @@
 
  :: Spring Boot ::                (v3.4.0)
 
-2024-12-21T20:52:19.821+03:00  INFO 1372829 --- [CommitteeManagement] [    Test worker] .e.C.CommitteeManagementApplicationTests : Starting CommitteeManagementApplicationTests using Java 17.0.13 with PID 1372829 (started by osama in /home/osama/Documents/spring_boot/committe_managment_spring_angular/api)
-2024-12-21T20:52:19.823+03:00  INFO 1372829 --- [CommitteeManagement] [    Test worker] .e.C.CommitteeManagementApplicationTests : No active profile set, falling back to 1 default profile: "default"
-2024-12-21T20:52:20.941+03:00  INFO 1372829 --- [CommitteeManagement] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-12-21T20:52:21.065+03:00  INFO 1372829 --- [CommitteeManagement] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 6 JPA repository interfaces.
-2024-12-21T20:52:21.844+03:00  INFO 1372829 --- [CommitteeManagement] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-12-21T20:52:21.894+03:00  INFO 1372829 --- [CommitteeManagement] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
-2024-12-21T20:52:21.926+03:00  INFO 1372829 --- [CommitteeManagement] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-12-21T20:52:22.226+03:00  INFO 1372829 --- [CommitteeManagement] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-12-21T20:52:22.271+03:00  INFO 1372829 --- [CommitteeManagement] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-12-21T20:52:24.235+03:00  INFO 1372829 --- [CommitteeManagement] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@644947ee
-2024-12-21T20:52:24.237+03:00  INFO 1372829 --- [CommitteeManagement] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-12-21T20:52:25.158+03:00  INFO 1372829 --- [CommitteeManagement] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2024-12-21T21:51:18.793+03:00  INFO 1393452 --- [CommitteeManagement] [    Test worker] .e.C.CommitteeManagementApplicationTests : Starting CommitteeManagementApplicationTests using Java 17.0.13 with PID 1393452 (started by osama in /home/osama/Documents/spring_boot/committe_managment_spring_angular/api)
+2024-12-21T21:51:18.800+03:00  INFO 1393452 --- [CommitteeManagement] [    Test worker] .e.C.CommitteeManagementApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-12-21T21:51:20.964+03:00  INFO 1393452 --- [CommitteeManagement] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-21T21:51:21.197+03:00  INFO 1393452 --- [CommitteeManagement] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 214 ms. Found 6 JPA repository interfaces.
+2024-12-21T21:51:22.974+03:00  INFO 1393452 --- [CommitteeManagement] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-21T21:51:23.077+03:00  INFO 1393452 --- [CommitteeManagement] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-21T21:51:23.138+03:00  INFO 1393452 --- [CommitteeManagement] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-21T21:51:23.690+03:00  INFO 1393452 --- [CommitteeManagement] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-21T21:51:23.745+03:00  INFO 1393452 --- [CommitteeManagement] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-21T21:51:31.052+03:00  INFO 1393452 --- [CommitteeManagement] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4cd5fc46
+2024-12-21T21:51:31.056+03:00  INFO 1393452 --- [CommitteeManagement] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-21T21:51:31.991+03:00  INFO 1393452 --- [CommitteeManagement] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 16.6
@@ -33,11 +33,11 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2024-12-21T20:52:26.260+03:00  INFO 1372829 --- [CommitteeManagement] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-12-21T20:52:37.028+03:00  INFO 1372829 --- [CommitteeManagement] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-12-21T20:52:37.507+03:00  WARN 1372829 --- [CommitteeManagement] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-12-21T20:52:37.556+03:00  INFO 1372829 --- [CommitteeManagement] [    Test worker] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
-2024-12-21T20:52:38.365+03:00  INFO 1372829 --- [CommitteeManagement] [    Test worker] .e.C.CommitteeManagementApplicationTests : Started CommitteeManagementApplicationTests in 18.9 seconds (process running for 21.616)
+2024-12-21T21:51:33.322+03:00  INFO 1393452 --- [CommitteeManagement] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-21T21:51:44.631+03:00  INFO 1393452 --- [CommitteeManagement] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-21T21:51:46.739+03:00  WARN 1393452 --- [CommitteeManagement] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-21T21:51:46.825+03:00  INFO 1393452 --- [CommitteeManagement] [    Test worker] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2024-12-21T21:51:48.722+03:00  INFO 1393452 --- [CommitteeManagement] [    Test worker] .e.C.CommitteeManagementApplicationTests : Started CommitteeManagementApplicationTests in 30.489 seconds (process running for 32.671)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

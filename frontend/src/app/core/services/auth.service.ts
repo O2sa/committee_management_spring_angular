@@ -6,19 +6,18 @@ import { apiRoutes } from '../constants/api';
 @Injectable({
   providedIn: 'root',
 })
-export class AuthService{
+export class AuthService {
   private authUrl = 'https://api.example.com/auth'; // Replace with your auth endpoint
 
   constructor(private http: HttpClient) {}
 
   // Login method to authenticate and retrieve JWT
-  login(credentials: { username: string; password: string }): Observable<any> {
-    return this.http.post(apiRoutes['login'], credentials);
+  login<T>(credentials: { username: string; password: string }): Observable<any> {
+    return this.http.post(apiRoutes['login'], credentials) as Observable<T>;
   }
 
-
-  register(credentials: { username: string; password: string; fullName: string }): Observable<any> {
-    return this.http.post(apiRoutes['register'], credentials);
+  register<T>(credentials: { username: string; password: string; fullName: string }): Observable<any> {
+    return this.http.post(apiRoutes['register'], credentials) as Observable<T>;
   }
 
   // Store JWT in localStorage

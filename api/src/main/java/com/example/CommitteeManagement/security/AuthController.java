@@ -34,8 +34,10 @@ public class AuthController {
     }
 
     @PostMapping("/register")
-    public String register(@RequestBody RegisterOtp registerRequest) {
+    public ResponseEntity register(@RequestBody RegisterOtp registerRequest) {
+        Map<String, Object> response = new HashMap<>();
+        response.put("msg", authService.register(registerRequest));
         // Check if the username already exists
-        return authService.register(registerRequest);
+        return ResponseEntity.ok(response);
     }
 }
