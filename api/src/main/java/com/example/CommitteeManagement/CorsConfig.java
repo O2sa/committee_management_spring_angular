@@ -14,10 +14,10 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**") // Allow all paths
-                .allowedOrigins("http://localhost:4200", "https://committee-management-spring-angular.onrender.com",
+                .allowedOrigins(
                         "*")
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*") // Allow all headers
-                .allowCredentials(true); // Allow credentials (cookies)
+                .allowCredentials(false); // Allow credentials (cookies)
     }
 }
